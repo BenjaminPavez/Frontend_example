@@ -10,11 +10,12 @@ import Footer from '../components/footer'
 import Bottom from '../components/bottom'
 
 const Layout = () => {
+  const isOn = true;
   return (
     <BrowserRouter>
       <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-      <div className='layout'>
-        <h1 className='layout__title'>Interfaz energética</h1>
+      <div className={isOn ? 'layout_black' : 'layout'}>
+        <h1 className='layout__title'>Proyecto Desarrollo</h1>
         <NavBar />
         <div className='layout__page'>
           <Routes>

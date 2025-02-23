@@ -7,7 +7,7 @@ export const LightbulbPage = () => {
   const [isOn, setIsOn] = useState(false);
 
   return (
-    <div className='lightbulb-page'>
+    <div className={isOn ? 'lightbulb-page' : 'lightbulb-page_black'}>
       <p>Presiona el botón para encender o apagar la ampolleta</p>
       <img src={isOn ? LightBulbOn : LightBulbOff} height={130} alt='ampolleta' />
       <br />
@@ -20,3 +20,5 @@ export const LightbulbPage = () => {
 }
 
 export default LightbulbPage
+
+//{isOn ? 'lightbulb-page' : 'lightbulb-page_black'}

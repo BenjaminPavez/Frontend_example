@@ -39,8 +39,6 @@ const Footer = () => {
 							</div>
 						</div>
 					</div>
-					
-					{/* Sección de Suscripción Mejorada */}
 					<div className='footerColumnSubscribe'>
 						<div className='masInformacionParent'>
 							<b className='masInformacion'>Más Información</b>
